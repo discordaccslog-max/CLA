@@ -6,7 +6,10 @@ Landing page for **EcomHub**, an e-commerce platform for online businesses.
 
 ```
 .
-├── index.html   # Main page (HTML with inline CSS)
+├── index.html     # Main page (HTML with inline CSS)
+├── external.html  # Shown for links to pages that weren't downloaded
+├── backblue.gif   # Background image for the content area
+├── fade.gif       # Background tile for table cells
 └── README.md
 ```
 
@@ -19,14 +22,9 @@ python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
 
-## Assets
+## Site content
 
-`index.html` references two background images that need to sit next to it in the repo root:
-
-- `backblue.gif`: background for the main content area
-- `fade.gif`: background for table cells
-
-The page still renders without them; only the background images are missing.
+The EcomHub link in `index.html` points to `www.ecomhubtheme.com/index.html`, a folder that sits next to `index.html`. That folder isn't in the repo yet, so the link returns "not found" until it's added.
 
 ## Publishing with GitHub Pages
 
